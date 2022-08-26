@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 const Articles = () => {
   return (
     <SafeAreaView>
-        <Text>Artículos</Text>
+      <Text style={{color: '#00000'}}>Articles!!</Text>
     </SafeAreaView>
   )
 }
