@@ -5,10 +5,10 @@ const Home = props => {
   return (
     <SafeAreaView>
       <View style={{alignItems: 'center', marginTop: 30, marginHorizontal: 20}}>
-        <Text style={{fontSize: 24, fontWeight: 'bold', color: '#00000'}}>
+        <Text style={{fontSize: 24, fontWeight: 'bold', color: '#000000'}}>
           Introducción
         </Text>
-        <Text style={{marginTop: 20, marginBottom: 10, color: '#00000'}}>
+        <Text style={{marginTop: 20, marginBottom: 10, color: '#000000'}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
           faucibus arcu. Proin ac imperdiet nibh, quis ultricies sem. Aenean
           quis augue nec purus elementum lobortis. Nunc sodales dapibus tellus
