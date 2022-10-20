@@ -6,11 +6,21 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import ArrowBackIcon from '../assets/icons/backArrow.svg';
 
 const Articles = props => {
   return (
     <SafeAreaView>
-      <Text style={{color: '#000000'}}>Articles!!</Text>
+      <ArrowBackIcon onPress={() => props.navigation.goBack()} />
+      <Text
+        style={{
+          color: '#000000',
+          marginTop: 10,
+          marginBottom: 20,
+          textAlign: 'center',
+        }}>
+        Artículos
+      </Text>
       {[
         [0, 1, 2],
         [3, 4, 5],
@@ -34,9 +44,7 @@ const Articles = props => {
                 borderRadius: 5,
                 alignItems: 'center',
                 justifyContent: 'center',
-              }}>
-              <Text style={{color: '#000000'}}>Hi</Text>
-            </View>
+              }}></View>
           ))}
         </View>
       ))}
@@ -47,9 +55,11 @@ const Articles = props => {
           paddingHorizontal: 20,
           borderRadius: 5,
           marginBottom: 180,
+          alignItems: 'center',
+          marginHorizontal: 30,
         }}
-        onPress={() => props.navigation.goBack()}>
-        <Text style={{color: 'white'}}>Back</Text>
+        onPress={() => props.navigation.navigate('Question1')}>
+        <Text style={{color: 'white'}}>Comenzar a clasificar</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
